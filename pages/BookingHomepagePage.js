@@ -9,7 +9,6 @@ export class BookingHomePage {
         this.changeSearchBtn = "//button[@data-testid='flightResult-changeFlight-button']";
         this.fromDestinationVal1 = "MNLA";
         this.toDestinationVal1 = "MPH";
-
     }
 
 

@@ -35,12 +35,10 @@ test('Enter Origin location and destination in homepage', async () => {
     await commonActions.click(page, bookingHomePage.toDestinationTxtBox);
     await commonActions.enter(page, bookingHomePage.toDestinationTxtBox, bookingHomePage.toDestinationVal1);
     await commonActions.click(page, bookingHomePage.flightSearchBtn);
-    await commonActions.click(page, bookingHomePage.flightSearchBtn);
 });
 
 test('Verify if user is navigated to flight selection page', async () => {
-    // Specify assertion to check if a element for flight selection page
-    // is visible
+    // Specify assertion to check for an element when user is navigated to flight selection page
     await expect(page.locator(bookingHomePage.changeSearchBtn)).toBeVisible();
 });
 
